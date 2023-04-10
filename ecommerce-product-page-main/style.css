@@ -1,0 +1,183 @@
+/* global styles start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 80px;
+}
+/* ======================Global styles end============================ */
+
+/* Navigation styles start */
+Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid  hsl(223, 64%, 98%);
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    width: 400px;
+}
+.links ul{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 10px; */
+    list-style: none;
+    text-decoration: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color:hsl(219, 9%, 45%);
+    font-weight:400;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile .cart{
+    margin-right: 30px;
+}
+.profile .avatar{
+    width: 40px;
+}
+/* ==================Navigation styles end=============================*/
+
+
+/* Section styles start  */
+
+section {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    /* justify-content: space-around; */
+    gap:90px;
+}
+
+section .left{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+}
+
+section .left .top{
+    width: 100%;
+    
+}
+.section .left .top img{
+    border-radius:5px;
+}
+section .left .bottom{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    
+}
+section .left .bottom .thumbs{
+    width:70px;
+    /* margin-right:20px; */
+}
+section .left .bottom .thumbs img{
+    object-fit: cover;
+    border-radius: 5px;
+    width:100%;
+}
+section .left .bottom .active img{
+    opacity: .6;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+section .right{
+    width: 400px;
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    justify-content:center;
+    /* margin-left: -50px; */
+    /* align-items: center; */
+}
+
+section .right .top{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+section .right .top h4{
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-size:11px;
+    font-weight:700;
+
+}
+section .right .top h1{
+    font-size: 38px;
+    color:hsl(220, 13%, 13%);
+}
+
+section .right .content{
+    color:hsl(219, 9%, 45%);
+}
+section .right .prices .prices_top{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+}
+section .right .prices .prices_top h2{
+    color:hsl(220, 13%, 13%);
+}
+section .right .prices .prices_top p{
+    padding:8px;
+    color:hsl(26, 100%, 55%);
+    background:  hsl(25, 100%, 94%);
+    border-radius:5px;
+    font-weight:700;
+}
+section .right .prices p{
+    font-size:13px;
+    font-weight: bold;
+    color:hsl(220, 14%, 75%);
+    /* background:hsl(223, 64%, 98%);
+    padding:4px; */
+    /* width: 60px; */
+    margin-top:5px;
+}
+section .right .bottom{
+    display:flex;
+    align-items:center;
+    gap: 10px
+}
+section .right .bottom p{
+    width:100px;
+    display:flex;
+    justify-content: space-between;
+    padding: 14px 14px;
+    border-radius:5px;
+    background: hsl(223, 64%, 98%);
+}
+section .right .bottom .btn{
+    padding:7px 15px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    border:none;
+    border-radius:5px;
+    /* justify-content:space-between; */
+    gap:9px;
+    color:hsl(0, 0%, 100%);
+    background:hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+section .right .bottom .btn .cart{
+    color: white;
+}

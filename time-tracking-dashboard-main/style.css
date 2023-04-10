@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: hsl(226, 43%, 10%);
+}
+.two,.three,.four,.five,.six,.seven{
+    /* height: 140px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    margin: 10px;
+    /* padding: 20px; */
+   /* background: hsl(235, 46%, 20%);
+   padding: 10px; */
+}
+
+/* .two .bottom .tops img{
+    height: 5px;
+} */
+.one{
+    grid-area:one;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+}
+.one .top{
+    background: hsl(246, 80%, 60%);
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-bottom: -10px; */
+}
+.one .top img{
+    width: 65px;
+    border-radius: 50%;
+    outline: 3px solid white;
+}
+.one .top .text{
+    color:white;
+    padding:5px;
+}
+.one .top .text p{
+    font-size: 13px;
+}
+.one .bottom{
+    background: hsl(235, 46%, 20%);
+    padding: 40px 20px;
+    /* padding: 60px 20px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -10px; */
+}
+.one .bottom .light{
+    font-size: 12px;
+    color:hsl(236, 100%, 87%);
+    padding: 5px;
+}
+.one .bottom .dark{
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+}
+.two{
+    grid-area:two;
+}
+.two .top{
+    background-image: url('./images/icon-work.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: hsl(15, 100%, 70%); 
+    padding: 10px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.three{
+    grid-area:three;
+}
+.three .top{
+    background-image: url('./images/icon-play.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: hsl(195, 74%, 62%); 
+    padding: 20px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.four{
+    grid-area:four;
+}
+.four .top{
+    background-image: url('./images/icon-study.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: hsl(348, 100%, 68%); 
+    padding: 20px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.five{
+    grid-area:five;
+}
+.five .top{
+    background-image: url('./images/icon-exercise.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: hsl(145, 58%, 55%); 
+    padding: 20px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.six{
+    grid-area:six;
+}
+.six .top{
+    background-image: url('./images/icon-social.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: hsl(264, 64%, 52%); 
+    padding: 20px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.seven{
+    grid-area:seven;
+}
+.seven .top{
+    background-image: url('./images/icon-self-care.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color:  hsl(43, 84%, 65%); 
+    padding: 20px;
+    height: 23%;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.two .bottom,.three .bottom,.four .bottom,.five .bottom,.six .bottom,.seven .bottom{
+    background: hsl(235, 46%, 20%);
+    padding: 10px 30px;
+    margin-top: 0;
+    border-radius: 5px;
+    color: white;
+}
+.two .bottom .p,.three .bottom .p,.four .bottom .p,.five .bottom .p,.six .bottom .p,.seven .bottom .p{
+    font-size: 12px;
+    padding: 10px;
+    color:  hsl(235, 45%, 61%);
+}
+
+.two .bottom .tops,.three .bottom .tops,.four .bottom .tops,.five .bottom .tops,.six .bottom .tops,.seven .bottom .tops{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px ;
+    gap:10px;
+    /* background-color: red; */
+    width: inherit;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr );
+    grid-template-areas: "one two three four" "one five six seven";
+    margin-top: 100px;
+    /* background-color: white; */
+}

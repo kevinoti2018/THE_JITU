@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 100px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+ Nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+Nav .logo img{
+    width: 70px;
+}
+
+Nav .links ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   width: 400px;
+   cursor: pointer;
+}
+
+main .one{
+    grid-area:one ;
+}
+main .two{
+    grid-area:two ;
+}
+main .three{
+    grid-area:three ;
+}
+main .four{
+    grid-area:four;
+}
+main .five{
+    grid-area:five ;
+}
+main .six{
+    grid-area:six;
+}
+main .seven{
+    grid-area:seven;
+}
+
+main .five ,main .six,main .seven{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap:5px;
+}
+
+main .five .content,main .six .content,main .seven .content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+
+}
+
+main .five .content h1,main .six .content h1,main .seven .content h1{
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+}
+
+main .five .content h3,main .six .content h3,main .seven .content h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+}
+main .five .content p,main .six .content p,main .seven .content p{
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+main .four{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 10px;
+    /* background-color: blue; */
+}
+main .four .content{
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+main .four .button button{
+    padding: 10px 20px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: hsl(5, 85%, 63%);
+    text-transform: uppercase;
+    color: hsl(36, 100%, 99%);
+    font-weight: 500;
+}
+main .three{
+    font-weight: 700;
+    font-size: 33px;
+    /* padding-right: -20px; */
+    /* background: red; */
+}
+main .two{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: hsl(240, 100%, 5%);
+    color: white;
+    padding: 15px;
+}
+main .two .top, main .two .mid, main .two .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* background: red; */ 
+    padding: 15px 10px;
+    
+
+}
+main .two .top, main .two .mid{
+    border-bottom: .05px solid hsl(233, 8%, 79%);
+}
+
+main .two .top .content, main .two .mid .content, main .two .bottom .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main .two .top .content p, main .two .mid .content p, main .two .bottom .content p{
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+main .two .top h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 27px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "one one two" "three four two" "five six seven";
+    gap:20px;
+}
